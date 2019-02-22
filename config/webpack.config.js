@@ -35,10 +35,10 @@ const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
 // style files regexes
-const cssRegex = /\.(css|less)$/;
-const cssModuleRegex = /\.module\.(css|less)$/;
-const sassRegex = /\.(scss|sass|less)$/;
-const sassModuleRegex = /\.module\.(scss|sass|less)$/;
+const cssRegex = /\.(scss|less)$/;
+const cssModuleRegex = /\.module\.css$/;
+const sassRegex = /\.(scss|sass)$/;
+const sassModuleRegex = /\.module\.(scss|sass)$/;
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
@@ -101,6 +101,9 @@ module.exports = function(webpackEnv) {
           sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
         },
       },
+      {
+        loader: require.resolve('less-loader')
+      }
     ].filter(Boolean);
     if (preProcessor) {
       loaders.push({
@@ -469,9 +472,6 @@ module.exports = function(webpackEnv) {
                 name: 'static/media/[name].[hash:8].[ext]',
               },
             },
-            {
-              loader: require.resolve('less-loader')
-            }
             // ** STOP ** Are you adding a new loader?
             // Make sure to add the new loader(s) before the "file" loader.
           ],

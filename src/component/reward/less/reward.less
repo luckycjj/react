@@ -1,0 +1,236 @@
+.comment_reward{
+	background-color: #fff;
+	position: absolute;
+	height:100%;
+	width:100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	.content{
+		width: 100%;
+		margin: auto;
+		.top{
+			display: -moz-box;
+			display: -webkit-box;
+			display: flex;
+			display: -webkit-flex;
+			-webkit-display: flex;
+			flex-direction: row;
+			-webkit-flex-direction: row;
+			box-orient: horizontal;
+			-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			justify-content: center;
+			-webkit-justify-content: center;
+			-moz-box-pack: center;
+			-webkit-box-pack: center;
+			-o-box-pack: center;
+			box-pack: center;
+			align-items: center;
+			-webkit-align-items: center;
+			-moz-box-align: center;
+			-webkit-box-align: center;
+			-o-box-align: center;
+			box-align: center;
+			.area{
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				color: #fff;
+				background: linear-gradient(to bottom,#ffc937,#ffba00);
+				.title{
+					font-weight: 400;
+					font-size: 16px;
+					margin-top: 15px;
+				}
+				.money{
+					font-size: 60px;
+					line-height: 60px;
+					margin-top: 15px;
+					.money-type{
+						font-size: 25px;
+						line-height: 60px;
+					}
+					.money-show{
+						font-size: 60px;
+						line-height: 60px;
+					}
+				}
+				.desc{
+					font-size: 13px;
+					margin-top: 20px;
+					margin-bottom: 30px;
+				}
+			}
+		}
+		.bottom{
+			display: -moz-box;
+			display: -webkit-box;
+			display: flex;
+			display: -webkit-flex;
+			-webkit-display: flex;
+			flex-direction: row;
+			-webkit-flex-direction: row;
+			box-orient: horizontal;
+			-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			justify-content: center;
+			-webkit-justify-content: center;
+			-moz-box-pack: center;
+			-webkit-box-pack: center;
+			-o-box-pack: center;
+			box-pack: center;
+			align-items: center;
+			-webkit-align-items: center;
+			-moz-box-align: center;
+			-webkit-box-align: center;
+			-o-box-align: center;
+			box-align: center;
+			.area{
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				.card{
+					margin-top: 15px;
+					margin-bottom: 45px;
+					font-size: 13px;
+					color: #d1d1d6;
+				}
+				.btn{
+					background-color: #ffb800;
+					margin-left: 20px;
+					margin-right: 20px;
+					padding: 10px 70px;
+					border-radius: 2px;
+					color: #fff;
+					font-size: 16px;
+					cursor: pointer;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+	.list{
+		margin-top: 40px;
+		.list-title{
+			padding: 0;
+			font-size: 16px;
+			color: #4a4a4a;
+			margin-left: 3%;
+			display: -moz-box;
+			display: -webkit-box;
+			display: flex;
+			display: -webkit-flex;
+			-webkit-display: flex;
+			flex-direction: row;
+			-webkit-flex-direction: row;
+			box-orient: horizontal;
+			-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			justify-content: flex-start;
+			-webkit-justify-content: flex-start;
+			-moz-box-pack: start;
+			-webkit-box-pack: start;
+			-o-box-pack: start;
+			box-pack: start;
+			align-items: center;
+			-webkit-align-items: center;
+			-moz-box-align: center;
+			-webkit-box-align: center;
+			-o-box-align: center;
+			box-align: center;
+			.reward-img{
+				background: url(https://pages.c-ctrip.com/you/livestream/ic_award_list.png?v=20190219_16_44) bottom;
+				background-size: 100%;
+				width: 17px;
+				height: 16px;
+				margin-right: 6px;
+				margin-top: -2px;
+			}
+		}
+		.nodata-wrap{
+			margin-top: 55px;
+			margin-bottom: 70px;
+			.ls-nodataimg {
+				width: 150px;
+				height: 76px;
+				background: url(https://pages.c-ctrip.com/you/livestream/ic_zero_neast.png?v=20190219_16_44);
+				background-size: 100%;
+				position: relative;
+				left: 50%;
+				margin-left: -75px;
+			}
+			.ls-nodatafont{
+				font-size: 16px;
+				color: #e5e5ea;
+				text-align: center;
+				line-height: 23px;
+				margin-top: 30px;
+			}
+		}
+		.js_listBox{
+			.listbox{
+				overflow: hidden;
+				.text_list{
+					li{
+						width: 94%;
+						display: block;
+						margin: 0 auto;
+						padding: 18px 0px 5px 0px;
+						border-bottom: 1px solid #DCDCDC;
+						.listLeft{
+							float: left;
+							width: 70%;
+							h6{
+								font-size: 14px;
+								color: #333;
+								span{
+									font-size: 12px;
+									margin-left: 3px;
+								}
+							}
+							h5{
+								font-size: 12px;
+								margin-top: 13px;
+								color: #999;
+							}
+						}
+						.listRight{
+							float: right;
+							width: 20%;
+							text-align: right;
+							h6{
+								font-size: 10px;
+								color: #999;
+							}
+							h5{
+								font-size: 12px;
+								margin-top: 13px;
+								color: #999;
+								margin-right: 24px
+							}
+							.gitfGet{
+								color:#ffb800
+							}
+						}
+						.clearBoth{
+							clear:both;
+						}
+					}
+					.borderno{
+						border:none;
+					}
+				}
+			}
+		}
+	}
+	.footer{
+		margin-top: 45px;
+		padding-bottom: 34px;
+		.desc{
+			font-size: 11px;
+			color: #d1d1d6;
+			text-align: center;
+		}
+	}
+
+}
