@@ -5,7 +5,7 @@ class App extends Component {
         super(props)
         this.state = {
             money:0,
-            list:[1],
+            list:[],
         }
         this.ajaxGet = this.ajaxGet.bind(this);
     }
